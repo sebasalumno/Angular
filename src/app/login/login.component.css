@@ -1,0 +1,19 @@
+.main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcyan;
+    
+  }
+.s-div{
+    position: relative; left: 80px;
+}
+.mat-raised-button{
+    position: relative; left: 120px; bottom: 40px;
+}
+.example-card{
+    background-color: lightblue;
+}
+
+
