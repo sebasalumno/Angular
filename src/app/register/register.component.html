@@ -1,1 +1,45 @@
-<p>register works!</p>
+<app-registerbar></app-registerbar>
+
+
+<div class="main-div">
+
+<mat-card class="example-card">
+        <mat-card-header >
+          <div class="s-div">
+          <mat-card-title>Register</mat-card-title>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <form class="example-form">
+            <table class="example-form" cellspacing="50">
+              <tr>
+                <td>
+                  <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Email"  name="email" required>
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Name"  name="name" required>
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                <td>
+
+                </td>
+              </tr>
+              <tr>
+              <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="Password" type="password" name="password" required>
+              </mat-form-field></td>
+            </tr></table>
+          </form>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="register()" color="primary">Register</button>
+        </mat-card-actions>
+</mat-card>
