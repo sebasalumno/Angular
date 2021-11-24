@@ -14,6 +14,8 @@ export class AppbarComponent implements OnInit {
   }
 
   register() : void {
-  this.router.navigate(["register"]);
+  console.log("asdasdasd");
+    this.router.navigate(["register"]);
+  
   }
 }

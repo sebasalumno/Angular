@@ -6,6 +6,7 @@ import { CustomMaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
@@ -22,10 +23,11 @@ import { RegisterComponent } from './register/register.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     CustomMaterialModule,
     FormsModule,
-    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
