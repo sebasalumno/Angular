@@ -14,13 +14,21 @@
 }
 .example-card{
     background-color: lightblue;
+    
 }
 .example-full-width{
     width: 300px;
+    
     
 }
 
 .example-card{
     height: auto;
     width: 400px;
+}
+.dropdown{
+    height: 50px;
+    width: auto;
+    color:rgb(80, 80, 80) ;
+    
 }
