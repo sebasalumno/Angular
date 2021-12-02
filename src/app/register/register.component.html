@@ -15,56 +15,41 @@
               <tr>
                 <td>
                   <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Email" [(ngModel)]="email" name="email" required>
+                  <input matInput placeholder="Email"  name="email" required>
                   </mat-form-field>
                 </td>
               </tr>
               <tr>
                 <td>
                   <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+                  <input matInput placeholder="Name"  name="name" required>
                   </mat-form-field>
                 </td>
               </tr>
               <tr>
                 <td>
-<<<<<<< HEAD
-                  <div class="dropdown" >
-                <mat-label>Provincia*</mat-label>
-                <mat-select >
-                  <mat-option
-                    [value]="provincias"
-                    *ngFor="let provincias of Provincias"
-                  >
-                    {{ provincias }}
-                  </mat-option>
-                </mat-select>
-              </div>
-            </td>
-=======
                     <mat-form-field class="example-full-width">
                         <input matInput placeholder="Provincia"  name="provincia" required>
                         </mat-form-field>
                 </td>
->>>>>>> parent of f92b6ee (commit de salvador)
               </tr>
               <tr>
                 <td>
                     <mat-form-field class="example-full-width">
-                        <input matInput placeholder="Localidad" [(ngModel)]="localidad" name="localidad" required>
+                        <input matInput placeholder="Localidad"  name="localidad" required>
                         </mat-form-field>
                 </td>
               </tr>
               <tr>
                 <td>
                     <mat-form-field class="example-full-width">
-                        <input matInput placeholder="Adress" [(ngModel)]="direccion" name="direccion" required>
+                        <input matInput placeholder="Direccion"  name="direccion" required>
                         </mat-form-field>
                 </td>
               </tr>
               <tr>
               <td><mat-form-field class="example-full-width">
-                <input matInput placeholder="Password" [(ngModel)]="password" name="password" required>
+                <input matInput placeholder="Password" type="password" name="password" required>
               </mat-form-field></td>
             </tr></table>
           </form>

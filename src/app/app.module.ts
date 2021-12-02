@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { NgModule } from '@angular/core';
-
+import { CustomMaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import{MatFormFieldModule} from '@angular/material/form-field';
@@ -34,6 +34,7 @@ import { HomebarComponent } from './homebar/homebar.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    CustomMaterialModule,
     FormsModule,
     MatFormFieldModule    
   ],
