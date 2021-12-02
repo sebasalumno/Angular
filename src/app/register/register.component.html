@@ -28,9 +28,18 @@
               </tr>
               <tr>
                 <td>
-                    <mat-form-field class="example-full-width">
-                        <input matInput placeholder="Provincia"  name="provincia" required>
-                        </mat-form-field>
+                  <div class = "dropdown">
+                    <mat-label>Provincia</mat-label>
+                    <mat-select >
+                      <mat-option 
+                      [value]="provincias"
+                      *ngFor="let provincias of Provincias"
+
+                      >
+                        {{ provincias }}
+                      </mat-option>
+                    </mat-select>
+                    </div>
                 </td>
               </tr>
               <tr>

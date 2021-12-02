@@ -24,3 +24,10 @@
     height: auto;
     width: 400px;
 }
+
+.dropdown{
+    height: 50px;
+    width: auto;
+    color:rgb(80, 80, 80) ;
+    
+}

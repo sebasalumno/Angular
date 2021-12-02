@@ -9,9 +9,28 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+    
+  Provincias = ['hola','buenas','tardes']
+
+  constructor(private router: Router) {
+    this.email = '';
+    this.username = '';
+    this.password='';
+    this.localidad = '';
+    this.direccion = '';
+    this.provincias ='';
+
+  }
+  provincias:String
+  ;
+  localidad:String;
+  direccion :String
+  email :String;
+  username: String;
+password: String;
   
 
-  constructor(private router: Router) { }
+
 
   ngOnInit(): void {
     

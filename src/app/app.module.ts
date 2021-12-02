@@ -3,11 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { NgModule } from '@angular/core';
-import { CustomMaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import{MatFormFieldModule} from '@angular/material/form-field';
-
+import {MatSelectModule} from '@angular/material/select';
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +17,15 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterbarComponent } from './registerbar/registerbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HomebarComponent } from './homebar/homebar.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+import {MatTableModule} from '@angular/material/table';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +39,21 @@ import { HomebarComponent } from './homebar/homebar.component';
     HomebarComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CustomMaterialModule,
-    FormsModule,
-    MatFormFieldModule    
+    MatFormFieldModule  ,
+    MatSelectModule,
+    MatToolbarModule, 
+    MatButtonModule, 
+    MatCardModule, 
+    MatInputModule, 
+    MatDialogModule, 
+    MatTableModule, 
+    MatMenuModule,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
