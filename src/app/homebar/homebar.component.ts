@@ -18,5 +18,10 @@ export class HomebarComponent implements OnInit {
     this.router.navigate([" "]);
   
   }
+  perfil() : void {
+
+    this.router.navigate(["perfil"]);
+  
+  }
 
 }

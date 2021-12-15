@@ -26,6 +26,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PerfilComponent } from './perfil/perfil.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegisterComponent,
     RegisterbarComponent,
     HomepageComponent,
-    HomebarComponent
+    HomebarComponent,
+    PerfilComponent
   ],
   imports: [
     FormsModule,
@@ -53,7 +56,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatTableModule, 
     MatMenuModule,
     MatIconModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

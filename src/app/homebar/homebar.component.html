@@ -7,24 +7,20 @@
         <span class="example-fill-remaining-space"></span>
         <span class="align-center"></span>
         <span class="example-spacer"></span>
-        <button mat-button>About</button>
-        <button mat-button>Contact</button>
-        <button mat-button (click)="login()">Log out</button>
+        
+        
+        <button mat-button>Crear ofertas</button>
+        <button mat-button>Ver ofertas creadas</button>
         <button mat-icon-button [matMenuTriggerFor]="menu">
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
-      </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
-        <span>Check voicemail</span>
+         <button mat-button (click)="perfil()">Mi perfil</button>
       </button>
       <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
-        <span>Disable alerts</span>
+        <button mat-button (click)="login()">Log out</button>
+     
       </button>
     </mat-menu>
      </mat-toolbar-row>
