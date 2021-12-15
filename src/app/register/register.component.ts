@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {FormControl} from '@angular/forms';
+import { ProvinciaService } from '../services/getallprovincia.service';
+import { Provincia } from '../models/provincia';
 
 
 @Component({
@@ -10,20 +12,20 @@ import {FormControl} from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
     
-  Provincias = ['hola','buenas','tardes']
+  Provincias:Array<Provincia> =[];
+  provinciaSelected:number = 0;
  
 
-  constructor(private router: Router) {
+  constructor(private router: Router,private provincia:ProvinciaService) {
     this.email = '';
     this.username = '';
     this.password='';
     this.localidad = '';
     this.direccion = '';
     this.provincias ='';
-    this.Informacion = [''];
-
+    this.loadProvincia();
   }
-  Informacion:String[];
+
   provincias:String;
   localidad:String;
   direccion :String
@@ -38,13 +40,21 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  register() : void {
+  loadProvincia(){
+    this.provincia.GetAll().subscribe((prov)=>{
+      console.log(prov)
+      prov.forEach(ele => this.Provincias.push(ele));
+    })
 
-   this.Informacion = [this.email,this.username,this.password,this.provincias,this.localidad,this.direccion]
- alert("se ha registrado");
+  }
+  register() : void {
 
  this.router.navigate([" "]);
   
+  }
+  change(Prov:Provincia){
+    this.provinciaSelected = Prov.id;
+
   }
 
 }
