@@ -35,7 +35,9 @@ user!:Usuario;
   }
 
 
-    this.auth.login(this.user).subscribe(()=>{
+    this.auth.login(this.user).subscribe((resp)=>{
+
+      sessionStorage.setItem("id",resp.id.toString())
       this.router.navigate(['home'])
     });
     (error:HttpErrorResponse)=>{

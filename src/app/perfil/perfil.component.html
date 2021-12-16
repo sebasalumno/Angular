@@ -1,11 +1,22 @@
-<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-<div *ngIf="hero">
+<app-perfilbar></app-perfilbar>
+<div class="main-body">
+<div  class="main-div">
+    <mat-card class="card">
+        <mat-card-header>
 
-    <h2>{{hero.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{hero.id}}</div>
-    <div>
-      <label for="hero-name">Hero name: </label>
-      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+            <mat-card-title>{{empresa.name}}</mat-card-title>
+            <mat-card-subtitle>{{empresa.email}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            
+            <p>Username: {{empresa.name}}</p>
+            <p>Blog Entries of {{empresa.name}}</p>
+            <p>Localidad : {{empresa.localidad}}</p>
+            <p> Direccion : {{empresa.direccion}}</p>
+
+            <p> Provincia : {{empresa.PV}}</p>
+            
+        </mat-card-content>
+    </mat-card>
     </div>
-  
-  </div> -->
+</div>

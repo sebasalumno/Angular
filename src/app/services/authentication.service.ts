@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs';
+import { Empresa } from './../models/user';
 import { Usuario } from './../models/usuario';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
@@ -8,8 +10,8 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 export class AuthenticationService {
 
   constructor(private http:HttpClient) { }
-  login(user:Usuario){
-    return this.http.post<any>("http://localhost:5000/api/Usuario/Login",user)
+  login(user:Usuario):Observable<Empresa>{
+    return this.http.post<Empresa>("http://localhost:5000/api/Usuario/Login",user)
 
   }
 }
