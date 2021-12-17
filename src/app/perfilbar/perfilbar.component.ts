@@ -20,4 +20,7 @@ export class PerfilbarComponent implements OnInit {
   home():void{
     this.router.navigate(["home"])
       }
+      offers():void{
+        this.router.navigate(["ofertas"])
+      }
 }

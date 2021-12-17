@@ -28,8 +28,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PerfilComponent } from './perfil/perfil.component';
 import { HttpClientModule } from '@angular/common/http';
-import { OfertasComponent } from './ofertas/ofertas.component';
 import { PerfilbarComponent } from './perfilbar/perfilbar.component';
+import { OffersComponent } from './offers/offers.component';
+import { OfferbarComponent } from './offerbar/offerbar.component';
 
 @NgModule({
   declarations: [
@@ -42,8 +43,9 @@ import { PerfilbarComponent } from './perfilbar/perfilbar.component';
     HomepageComponent,
     HomebarComponent,
     PerfilComponent,
-    OfertasComponent,
-    PerfilbarComponent
+    PerfilbarComponent,
+    OffersComponent,
+    OfferbarComponent
   ],
   imports: [
     FormsModule,

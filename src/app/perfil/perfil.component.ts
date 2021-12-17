@@ -2,6 +2,7 @@ import { EmpresaService } from './../services/empresa.service';
 import { Empresa } from './../models/user';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -15,7 +16,7 @@ a:string = "1";
  
 
   
-  constructor(private router: Router,private empre:EmpresaService) { 
+  constructor(private router: Router,private empre:EmpresaService,public dialog: MatDialog) { 
 
   }
 
@@ -41,5 +42,10 @@ a:string = "1";
     })
    
   }
-
+  // openDialog() {
+  //   this.dialog.open(UpdateEmpresa, {
+      
+  //   });
+  // }
 }
+
