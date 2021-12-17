@@ -25,12 +25,14 @@ import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PerfilComponent } from './perfil/perfil.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PerfilbarComponent } from './perfilbar/perfilbar.component';
 import { OffersComponent } from './offers/offers.component';
 import { OfferbarComponent } from './offerbar/offerbar.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { OfferbarComponent } from './offerbar/offerbar.component';
     MatMenuModule,
     MatIconModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

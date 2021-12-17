@@ -12,16 +12,31 @@
             <mat-card-subtitle>{{empresa.email}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-            
+            <div fxLayout="row" >
+            <div fxFlex = "60">
             <p>Username: {{empresa.name}}</p>
             <p>Blog Entries of {{empresa.name}}</p>
             <p>Localidad : {{empresa.localidad}}</p>
             <p> Direccion : {{empresa.direccion}}</p>
-
             <p> Provincia : {{empresa.PV}}</p>
+        </div>
+        <div fxLayout="column" fxFlex="60" fxLayoutAlign="space-around">
+        <p>Opciones</p>
+        <mat-slide-toggle>Notifications</mat-slide-toggle>
+        <mat-slide-toggle>Permitir Mensajes</mat-slide-toggle>
+        <div fxFlex="30">
+        <button mat-raised-button class="button" color="primary">Guardar</button>
+        </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="space-around end" >
+            <button mat-raised-button class="button" color="primary">Edit</button>
+            <button mat-raised-button class="button" color="primary">Historial</button>
+        </div>
+
+</div>
             
         </mat-card-content>
-        <button mat-raised-button class="button" color="primary">Edit</button>
+        
     </mat-card>
     
     </div>

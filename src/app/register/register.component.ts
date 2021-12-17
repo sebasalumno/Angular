@@ -23,7 +23,7 @@ export class RegisterComponent implements OnInit {
     this.localidad = '';
     this.direccion = '';
     this.provincias ='';
-    this.loadProvincia();
+    
   }
 
   provincias:String;
@@ -38,7 +38,7 @@ export class RegisterComponent implements OnInit {
 
 
   ngOnInit(): void {
-    
+    this.loadProvincia();
   }
   loadProvincia(){
     this.provincia.GetAll().subscribe((prov)=>{
