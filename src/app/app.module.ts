@@ -33,6 +33,8 @@ import { PerfilbarComponent } from './perfilbar/perfilbar.component';
 import { OffersComponent } from './offers/offers.component';
 import { OfferbarComponent } from './offerbar/offerbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { OffersDialogComponent } from './offers-dialog/offers-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -47,8 +49,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     PerfilComponent,
     PerfilbarComponent,
     OffersComponent,
-    OfferbarComponent
+    OfferbarComponent,
+    OffersDialogComponent,
+
   ],
+  entryComponents:[OffersDialogComponent],
   imports: [
     FormsModule,
     BrowserModule,

@@ -1,7 +1,7 @@
 import { DatePipe } from "@angular/common";
 
-export interface Offer{
-    id:number
+export interface OfferC{
+    EmpresaId:number;
     nombre:string;
     descripcion:string;
     remuneracion:number;

@@ -11,7 +11,7 @@ export class AuthenticationService {
 
   constructor(private http:HttpClient) { }
   login(user:Usuario):Observable<Empresa>{
-    return this.http.post<Empresa>("http://localhost:5000/api/Usuario/Login",user)
+    return this.http.post<Empresa>("http://localhost:5000/api/Empresa/Login",user);
 
   }
 }

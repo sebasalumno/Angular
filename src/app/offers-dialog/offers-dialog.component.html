@@ -1,0 +1,40 @@
+<h2 mat-dialog-title>Crear oferta</h2>
+
+<mat-form-field appearance="fill">
+    <mat-label>Nombre de la oferta</mat-label>
+    <input matInput [(ngModel)]="Oferta.nombre">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>descripcion de la oferta</mat-label>
+    <input matInput [(ngModel)]="Oferta.descripcion">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>remuneracion de la oferta</mat-label>
+    <input matInput [(ngModel)]="Oferta.remuneracion">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>fechaI de la oferta</mat-label>
+    <input matInput [(ngModel)]="Oferta.fechaI">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>fechaF de la oferta</mat-label>
+    <input matInput [(ngModel)]="Oferta.fechaF">
+  </mat-form-field>
+    
+  <mat-form-field appearance="fill">
+    <mat-label>horario de la oferta</mat-label>
+    <input matInput [(ngModel)]="Oferta.horario">
+  </mat-form-field>
+
+
+<div mat-dialog-actions>
+
+    <button mat-button [mat-dialog-close]="Oferta" cdkFocusInitial>Ok</button>
+    <button mat-button (Click) = "Cancelar()">Cancelar</button>
+  </div>
+
+

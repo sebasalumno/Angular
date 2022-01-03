@@ -21,8 +21,18 @@
 }
 .main-body{
     background-color: lightblue;
-    height: 100vh;
+    height: auto;
 }
 .mat-card-header{
     height: 8vh;
+}
+.desc{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: gray;
+
+    background-color: lightgray;
+    width: 60%;
+    height: auto;
 }

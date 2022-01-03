@@ -1,32 +1,45 @@
 <app-offerbar></app-offerbar>
 <div class="main-body" >
-<div  class="main-div">
+  
+
+
+<div  class="main-div" fxLayout = "column" fxLayoutAlign="space-around center">
+    
+<button mat-raised-button (click) = "openDialog()"> Añadir oferta  </button>
+
     <mat-card class="card" *ngFor="let oferta of Ofertas">
-        <mat-card-header fxLayout = "row">
+        <mat-card-header >
 
             <div mat-card-avatar>
                 <img src="../../assets/a.jpg" class="header-image">
             </div>
 
-            <mat-card-title> {{oferta.nombre}}       </mat-card-title>
-            <mat-card-subtitle>  remuneracion:{{oferta.remuneracion}}     </mat-card-subtitle>
+            <mat-card-title> {{oferta.nombre}}</mat-card-title>
+            <mat-card-subtitle>  remuneracion:{{oferta.remuneracion}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
             <div fxLayout="row" >
             <div fxFlex = "60">
 
             <p>Oferta de {{oferta.nombre}}</p>
-            <p>Fecha inicio : {{oferta.fechaI}}   </p>
-            <p> Fecha finalizacion :{{oferta.F}}         </p>
+            <p>Fecha inicio : {{oferta.fechaI}}</p>
+            <p> Fecha finalizacion :{{oferta.fechaF}}</p>
             <p> Horario : {{oferta.horario}}        </p>
         </div>
         <div fxLayout="column" fxFlex="60" fxLayoutAlign="space-around">
-        <p>         </p>
-
-        <div fxFlex="30">
+        <p>  Descripcion:      </p>
+        <div class="desc">
+                    <p>  {{oferta.descripcion}}  </p>
 
         </div>
         </div>
+        <div fxFlex="10" fxLayoutAlign="space-around end">
+            <button mat-raised-button color="primary" (click) = "Delete(oferta.id)">Delete</button>
+            <button mat-raised-button color="primary">Edit</button>
+
+        </div>
+        
+
 
 
 </div>
