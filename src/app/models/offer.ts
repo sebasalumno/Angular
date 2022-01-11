@@ -1,4 +1,4 @@
-import { DatePipe } from "@angular/common";
+
 
 export interface Offer{
     id:number
@@ -8,5 +8,6 @@ export interface Offer{
     fechaI:Date;
     fechaF:Date;
     horario:string;
+
 
 }

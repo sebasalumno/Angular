@@ -15,14 +15,14 @@
               <tr>
                 <td>
                   <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Email"  name="email" required>
+                  <input matInput placeholder="Email"  [(ngModel)]="email" name="something" required>
                   </mat-form-field>
                 </td>
               </tr>
               <tr>
                 <td>
                   <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Name"  name="name" required>
+                  <input matInput placeholder="Name"  [(ngModel)]="username" name="something"required>
                   </mat-form-field>
                 </td>
               </tr>
@@ -44,20 +44,20 @@
               <tr>
                 <td>
                     <mat-form-field class="example-full-width">
-                        <input matInput placeholder="Localidad"  name="localidad" required>
+                        <input matInput placeholder="Localidad"  [(ngModel)]="localidad"name="something" required>
                         </mat-form-field>
                 </td>
               </tr>
               <tr>
                 <td>
                     <mat-form-field class="example-full-width">
-                        <input matInput placeholder="Direccion"  name="direccion" required>
+                        <input matInput placeholder="Direccion"  [(ngModel)]="direccion" name="something"required>
                         </mat-form-field>
                 </td>
               </tr>
               <tr>
               <td><mat-form-field class="example-full-width">
-                <input matInput placeholder="Password" type="password" name="password" required>
+                <input matInput placeholder="Password" type="password" [(ngModel)]="password" name="something"required>
               </mat-form-field></td>
             </tr></table>
           </form>

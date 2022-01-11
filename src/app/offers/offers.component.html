@@ -33,6 +33,17 @@
 
         </div>
         </div>
+        <div fxLayout="column" fxFlex="60" fxLayoutAlign="space-around">
+            
+                <button mat-raised-button *ngFor="let Ciclo of CiclosOFerta"  >
+                      
+                          {{Ciclo[3].name}} 
+                        </button>
+
+
+
+        </div>
+
         <div fxFlex="10" fxLayoutAlign="space-around end">
             <button mat-raised-button color="primary" (click) = "Delete(oferta.id)">Delete</button>
             <button mat-raised-button color="primary">Edit</button>
