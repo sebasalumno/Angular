@@ -8,5 +8,8 @@ export interface OfferC{
     fechaI:Date;
     fechaF:Date;
     horario:string;
+    ciclos:Array<number>
+
+
 
 }

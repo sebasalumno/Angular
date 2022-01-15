@@ -29,6 +29,17 @@
     <mat-label>horario de la oferta</mat-label>
     <input matInput [(ngModel)]="Oferta.horario">
   </mat-form-field>
+  <div class = "dropdown">
+    <mat-label>Ciclos</mat-label>
+    <mat-select  (selectionChange)= "change($event.value)">
+      <mat-option 
+      [value]="ciclo"
+      *ngFor="let ciclo of Ciclos"
+      >
+        {{ ciclo.name }}
+      </mat-option>
+    </mat-select>
+    </div>
 
 
 <div mat-dialog-actions>

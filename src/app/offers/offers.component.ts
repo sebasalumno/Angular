@@ -69,7 +69,7 @@ export class OffersComponent implements OnInit {
 openDialog(){
   let ofertaC = this.dialog.open(OffersDialogComponent)
   ofertaC.afterClosed().subscribe(result => {
-    
+    console.log(result)
     this.oferta.Create(result).subscribe((resp) =>{
           console.log(resp)
           window.location.reload();

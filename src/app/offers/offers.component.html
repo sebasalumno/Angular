@@ -7,7 +7,7 @@
     
 <button mat-raised-button (click) = "openDialog()"> Añadir oferta  </button>
 
-    <mat-card class="card" *ngFor="let oferta of Ofertas">
+    <mat-card class="card" *ngFor="let oferta of Ofertas; let i = index">
         <mat-card-header >
 
             <div mat-card-avatar>
@@ -35,9 +35,9 @@
         </div>
         <div fxLayout="column" fxFlex="60" fxLayoutAlign="space-around">
             
-                <button mat-raised-button *ngFor="let Ciclo of CiclosOFerta"  >
+                <button mat-raised-button *ngFor="let ciclo of Ciclos"  >
                       
-                          {{Ciclo[3].name}} 
+                          {{ciclo.name}} 
                         </button>
 
 
