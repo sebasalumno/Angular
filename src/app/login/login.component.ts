@@ -36,8 +36,11 @@ user!:Usuario;
 
   
     this.auth.login(this.user).subscribe((resp)=>{
+    
+      sessionStorage.setItem("id",resp.body!.toString())
+      sessionStorage.setItem("token" , resp.headers.get("authorization")!),
 
-      sessionStorage.setItem("id",resp.id.toString())
+
       this.router.navigate(['home'])
       
     });

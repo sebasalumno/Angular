@@ -10,8 +10,8 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 export class AuthenticationService {
 
   constructor(private http:HttpClient) { }
-  login(user:Usuario):Observable<Empresa>{
-    return this.http.post<Empresa>("http://localhost:5000/api/Empresa/Login",user);
+  login(user:Usuario){
+    return this.http.post("http://localhost:5000/api/Empresa/Login",user,{observe:"response"});
 
   }
 }
