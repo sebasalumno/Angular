@@ -36,8 +36,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { OffersDialogComponent } from './offers-dialog/offers-dialog.component';
 //interceptors
 import { AuthInterceptorService } from './auth-interceptor.service';
+import { InscriptionsComponent } from './inscriptions/inscriptions.component';
+import { InscriptionsbarComponent } from './inscriptionsbar/inscriptionsbar.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { ConfirmationbarComponent } from './confirmationbar/confirmationbar.component';
 
-
+//para iniciar angular ng serve --proxy-config proxy.conf.json
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +57,10 @@ import { AuthInterceptorService } from './auth-interceptor.service';
     OffersComponent,
     OfferbarComponent,
     OffersDialogComponent,
+    InscriptionsComponent,
+    InscriptionsbarComponent,
+    ConfirmationComponent,
+    ConfirmationbarComponent,
 
   ],
   entryComponents:[OffersDialogComponent],
@@ -61,7 +69,7 @@ import { AuthInterceptorService } from './auth-interceptor.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatFormFieldModule  ,
+    MatFormFieldModule,
     MatSelectModule,
     MatToolbarModule, 
     MatButtonModule, 

@@ -1,0 +1,37 @@
+<app-confirmationbar></app-confirmationbar>
+
+<div class="main-div">
+
+    <mat-card class="example-card">
+            <mat-card-header >
+              <div class="s-div">
+              <mat-card-title>confirmar cuenta</mat-card-title>
+              </div>
+            </mat-card-header>
+            <mat-card-content>
+              <form class="example-form">
+                <table class="example-form" cellspacing="60">
+                  <tr>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Email" [(ngModel)]="email" name="email" required>
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Codigo" [(ngModel)]="codigo" name="Codigo" required>
+                      </mat-form-field>
+                    </td>
+                  </tr>
+</table>
+              </form>
+    
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button (click)="enviar()" color="primary">Enviar</button>
+            </mat-card-actions>
+         
+    
+    </mat-card>

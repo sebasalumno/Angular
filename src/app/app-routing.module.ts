@@ -7,6 +7,8 @@ import { RegisterComponent } from './register/register.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { OffersComponent } from './offers/offers.component';
+import { InscriptionsComponent } from './inscriptions/inscriptions.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 const routes: Routes = [
   { path: 'user', component: UserComponent },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'perfil', component: PerfilComponent },
   { path: 'ofertas', component: OffersComponent },
+  { path: 'inscripciones', component: InscriptionsComponent },
+  { path: 'confirmacion', component: ConfirmationComponent },
   { path: '**', component: LoginComponent }
 
 ];

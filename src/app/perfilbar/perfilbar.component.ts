@@ -23,4 +23,9 @@ export class PerfilbarComponent implements OnInit {
       offers():void{
         this.router.navigate(["ofertas"])
       }
+      inscription() : void {
+
+        this.router.navigate(["inscripciones"]);
+      
+      }
 }

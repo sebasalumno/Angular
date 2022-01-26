@@ -12,10 +12,7 @@ import { Oferta_Ciclo } from '../models/oferta_ciclo';
 
 import { Ciclo } from '../models/ciclo';
 
-export interface ChipColor {
-  name: string;
-  color: ThemePalette;
-}
+
 
 @Component({
   selector: 'app-offers',
@@ -45,7 +42,7 @@ export class OffersComponent implements OnInit {
     
     offer.forEach((element: Offer) => 
      
-    this.Ofertas.push(element),
+    this.Ofertas.push(element)
     
     );
     console.log(this.Ofertas);

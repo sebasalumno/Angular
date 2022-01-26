@@ -7,7 +7,7 @@
     
   }
 .s-div{
-    position: relative; left: 80px;
+    position: relative; left: 40px;
 }
 .mat-raised-button{
     position: relative; left: 120px; bottom: 40px;
@@ -18,5 +18,3 @@
 .conf{
     position: relative; right: 40px;
 }
-
-

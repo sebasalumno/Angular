@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-offerbar',
-  templateUrl: './offerbar.component.html',
-  styleUrls: ['./offerbar.component.css']
+  selector: 'app-inscriptionsbar',
+  templateUrl: './inscriptionsbar.component.html',
+  styleUrls: ['./inscriptionsbar.component.css']
 })
-export class OfferbarComponent implements OnInit {
+export class InscriptionsbarComponent implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -17,21 +18,21 @@ export class OfferbarComponent implements OnInit {
     alert("saliendo de su cuenta");
     this.router.navigate([" "]);
   
-    
   }
   perfil() : void {
 
     this.router.navigate(["perfil"]);
   
   }
-  home() : void {
+  ofertas() : void {
 
-    this.router.navigate(["home"]);
+    this.router.navigate(["ofertas"]);
   
   }
-  inscription() : void {
 
-    this.router.navigate(["inscripciones"]);
+  pagina() : void {
+
+    this.router.navigate(["home"]);
   
   }
 

@@ -1,0 +1,47 @@
+<app-inscriptionsbar></app-inscriptionsbar>
+<div class="main-body" >
+  
+
+
+    <div  class="main-div" fxLayout = "column" fxLayoutAlign="space-around center">
+        
+
+    
+        <mat-card class="card" *ngFor="let inscripcion of Inscripciones; let i = index">
+            <mat-card-header >
+    
+                <div mat-card-avatar>
+                    <img src="../../assets/a.jpg" class="header-image">
+                </div>
+    
+                <mat-card-title> {{inscripcion.id}}</mat-card-title>
+                <mat-card-subtitle>  remuneracion:{{inscripcion.alumnoId}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div fxLayout="row" >
+                <div fxFlex = "60">
+    
+                <p>Oferta de {{inscripcion.ofertaId}}</p>
+                <p>Fecha inscripcion : {{inscripcion.fechaInscripcion}}</p>
+                <p> Estado :{{inscripcion.estadoInscripcion}}</p>
+
+            </div>
+ 
+
+
+            
+    
+    
+    
+    </div>
+                
+            </mat-card-content>
+            
+        </mat-card>
+        
+        </div>
+     
+    
+    
+        
+    </div>

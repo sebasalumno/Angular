@@ -29,5 +29,11 @@ export class HomebarComponent implements OnInit {
   
   }
 
+  inscripciones() : void {
+
+    this.router.navigate(["inscripciones"]);
+  
+  }
+
 
 }
