@@ -40,6 +40,8 @@ import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 import { InscriptionsbarComponent } from './inscriptionsbar/inscriptionsbar.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { ConfirmationbarComponent } from './confirmationbar/confirmationbar.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { ChangepasswordbarComponent } from './changepasswordbar/changepasswordbar.component';
 
 //para iniciar angular ng serve --proxy-config proxy.conf.json
 @NgModule({
@@ -61,6 +63,8 @@ import { ConfirmationbarComponent } from './confirmationbar/confirmationbar.comp
     InscriptionsbarComponent,
     ConfirmationComponent,
     ConfirmationbarComponent,
+    ChangepasswordComponent,
+    ChangepasswordbarComponent,
 
   ],
   entryComponents:[OffersDialogComponent],

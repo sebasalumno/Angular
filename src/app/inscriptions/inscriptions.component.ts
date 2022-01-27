@@ -1,8 +1,10 @@
+import { ContactService } from './../services/contact.service';
 import { Offer } from './../models/offer';
 import { Inscription } from './../models/inscription';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { InscriptionService } from '../services/inscription.service';
+import { Contact } from '../models/contact';
 
 @Component({
   selector: 'app-inscriptions',
@@ -13,11 +15,27 @@ export class InscriptionsComponent implements OnInit {
 
 
   Inscripciones:Array<Inscription> = [];
+  contact!:Contact;
 
-  constructor(private router:Router,private inscripciones:InscriptionService) { }
+  constructor(private router:Router,private inscripciones:InscriptionService,private contacto:ContactService) { }
 
   ngOnInit(): void {
     this.loadInscripciones();
+  }
+  Send(id:number):void{
+    this.contact={
+      id:Number(id.toString()),
+      idempresa:Number(sessionStorage.getItem("id"))
+    }
+    this.contacto.Contact(this.contact).subscribe((resp)=>{
+      if(resp ==true){
+        alert("Se le ha enviado un correo al usuario");
+      }else{
+        alert("el usuario ¿¡No existe!?")
+      }
+
+    });
+
   }
 
   loadInscripciones(){

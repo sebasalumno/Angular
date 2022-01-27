@@ -9,6 +9,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { OffersComponent } from './offers/offers.component';
 import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 
 const routes: Routes = [
   { path: 'user', component: UserComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'ofertas', component: OffersComponent },
   { path: 'inscripciones', component: InscriptionsComponent },
   { path: 'confirmacion', component: ConfirmationComponent },
+  { path: 'changepassword', component: ChangepasswordComponent },
   { path: '**', component: LoginComponent }
 
 ];

@@ -1,3 +1,4 @@
+import { Codigo } from './../models/codigo';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SendcodeService } from '../services/sendcode.service';
@@ -11,6 +12,7 @@ export class ConfirmationComponent implements OnInit {
 
   email!:string;
   codigo!:number;
+  codigovar!:Codigo
 
   constructor(private router: Router,private code : SendcodeService) { }
 
@@ -18,7 +20,12 @@ export class ConfirmationComponent implements OnInit {
   }
 
   enviar():void{
-    this.code.sendcode(this.email,this.codigo).subscribe((resp)=>{
+    this.codigovar={
+      email:this.email,
+      codigo:Number(this.codigo.toString())
+    }
+    console.log(this.codigovar)
+    this.code.sendcode(this.codigovar).subscribe((resp)=>{
       if(resp == true){
         this.router.navigate(["login"]);
       }

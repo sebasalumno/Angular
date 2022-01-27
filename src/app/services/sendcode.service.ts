@@ -1,3 +1,4 @@
+import { Codigo } from './../models/codigo';
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
@@ -8,8 +9,8 @@ export class SendcodeService {
 
     constructor(private http:HttpClient) { }
 
-    sendcode(email:string,codigo:number){
-        return this.http.put("http://localhost:5000/api/Confirmacion/ConfirmacionEmpresa?email=" + email +"&codigo="+ codigo,email)
+    sendcode(codigo:Codigo){
+        return this.http.post("http://localhost:5000/api/Confirmacion/ConfirmacionEmpresa",codigo)
 
     }
     
