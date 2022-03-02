@@ -10,6 +10,7 @@ import { OffersComponent } from './offers/offers.component';
 import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { RecoverpasswordComponent } from './recoverpassword/recoverpassword.component';
 
 const routes: Routes = [
   { path: 'user', component: UserComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'inscripciones', component: InscriptionsComponent },
   { path: 'confirmacion', component: ConfirmationComponent },
   { path: 'changepassword', component: ChangepasswordComponent },
+  { path: 'recoverpassword', component: RecoverpasswordComponent },
   { path: '**', component: LoginComponent }
 
 ];

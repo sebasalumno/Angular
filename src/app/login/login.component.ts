@@ -33,6 +33,10 @@ user!:Usuario;
       this.router.navigate(["confirmacion"]);
     }
 
+    contrasena():void{
+      this.router.navigate(["recoverpassword"]);
+    }
+
   login() : void {
   this.user={
   email:this.username,
