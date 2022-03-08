@@ -9,4 +9,5 @@ export class Empresa{
     direccion!:String;
     PV!:String|undefined;
     provincia?:Provincia;
+    rolId!:number;
 }

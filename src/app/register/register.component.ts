@@ -77,7 +77,7 @@ export class RegisterComponent implements OnInit {
     this.registerss.register(this.registervar).subscribe(()=>{
       
 
-        this.router.navigate(["login"]);
+        this.router.navigate(["suscripcion"]);
       
        
     });

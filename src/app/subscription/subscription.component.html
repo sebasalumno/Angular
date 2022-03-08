@@ -1,0 +1,72 @@
+<div class="main-div">
+<div fxLayout="row" fxFlex="80"fxLayoutAlign="space-evenly center" >
+
+
+    <mat-card class="example-card">
+            <mat-card-header >
+              <div class="s-div">
+              <mat-card-title>Suscricion Gratuita</mat-card-title>
+              </div>
+            </mat-card-header>
+            <mat-card-content>
+              <form class="example-form">
+                <table class="example-form" cellspacing="60">
+                  <tr>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                      <p>Beneficios:</p>
+                      <p>*Poner ofertas para los alumnos </p> 
+                      <p>*Editar tu perfil</p> 
+                      <p>*Ver las inscripciones a tus ofertas </p> 
+                      <p>*Contactar con los alumnos mediante correo </p> 
+                      </mat-form-field>
+                    </td>
+                  </tr>
+              </table>
+              </form>
+    
+            </mat-card-content>
+            <div class="conf">
+              <mat-card-actions>
+                <button mat-raised-button  (click)="Free()"color="primary">Elegir</button>
+              </mat-card-actions>
+      
+      </div> 
+  </mat-card>
+
+  <mat-card class="premium-card">
+    <mat-card-header >
+      <div class="t-div">
+      <mat-card-title style="color:white">Suscricion Premium(9.99€)</mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-form" cellspacing="60">
+          <tr>
+            <td>
+              <mat-form-field class="premium-full-width" style="color:white">
+                <p>Beneficios:</p>
+                <p>*Poner ofertas para los alumnos </p> 
+                <p>*Editar tu perfil</p> 
+                <p>*Ver las inscripciones a tus ofertas </p> 
+                <p>*Contactar con los alumnos mediante correo </p> 
+                <p>*Contactar con los alumnos mediante la aplicacion </p> 
+                <p>*Cuenta verificada en la aplicacion </p> 
+              </mat-form-field>
+            </td>
+          </tr>
+</table>
+      </form>
+
+    </mat-card-content>
+    <div class="conf">
+      <mat-card-actions>
+        <button mat-raised-button (click)="Comprar()" color="primary">Comprar</button>
+      </mat-card-actions>
+
+</div> 
+</mat-card>
+</div>
+</div>
+

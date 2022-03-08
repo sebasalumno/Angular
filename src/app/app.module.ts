@@ -43,6 +43,11 @@ import { ConfirmationbarComponent } from './confirmationbar/confirmationbar.comp
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { ChangepasswordbarComponent } from './changepasswordbar/changepasswordbar.component';
 import { RecoverpasswordComponent } from './recoverpassword/recoverpassword.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { StripeComponent } from './stripe/stripe.component';
+import { SuccessComponent } from './success/success.component';
+import { FailureComponent } from './failure/failure.component';
+import { InscriptionsDialogComponent } from './inscriptions-dialog/inscriptions-dialog.component';
 
 //para iniciar angular ng serve --proxy-config proxy.conf.json
 @NgModule({
@@ -67,6 +72,11 @@ import { RecoverpasswordComponent } from './recoverpassword/recoverpassword.comp
     ChangepasswordComponent,
     ChangepasswordbarComponent,
     RecoverpasswordComponent,
+    SubscriptionComponent,
+    StripeComponent,
+    SuccessComponent,
+    FailureComponent,
+    InscriptionsDialogComponent,
 
   ],
   entryComponents:[OffersDialogComponent],

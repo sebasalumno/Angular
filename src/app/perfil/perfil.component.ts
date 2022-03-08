@@ -54,7 +54,8 @@ a:string = "1";
                 localidad:info.localidad,
                 direccion:info.direccion,
                 provinciaId:info.provinciaId,
-                PV:info.provincia?.nombre
+                PV:info.provincia?.nombre,
+                rolId:info.rolId
 
             
               }

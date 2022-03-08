@@ -46,8 +46,9 @@ user!:Usuario;
   
     this.auth.login(this.user).subscribe((resp)=>{
       var empresa = resp.body as Empresa;
-    
+      console.log(empresa)
       sessionStorage.setItem("id",empresa.id.toString())
+      sessionStorage.setItem("rolId",empresa.rolId.toString())
       console.log(empresa.id.toString())
       sessionStorage.setItem("token" , resp.headers.get("authorization")!),
 

@@ -67,6 +67,7 @@ openDialog(){
   let ofertaC = this.dialog.open(OffersDialogComponent)
   ofertaC.afterClosed().subscribe(result => {
     console.log(result)
+    result.remuneracion = Number(result.remuneracion.toString());
     this.oferta.Create(result).subscribe((resp) =>{
           console.log(resp)
           window.location.reload();

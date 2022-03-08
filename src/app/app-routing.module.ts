@@ -11,6 +11,10 @@ import { InscriptionsComponent } from './inscriptions/inscriptions.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { RecoverpasswordComponent } from './recoverpassword/recoverpassword.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { StripeComponent } from './stripe/stripe.component';
+import { SuccessComponent } from './success/success.component';
+import { FailureComponent } from './failure/failure.component';
 
 const routes: Routes = [
   { path: 'user', component: UserComponent },
@@ -23,6 +27,10 @@ const routes: Routes = [
   { path: 'confirmacion', component: ConfirmationComponent },
   { path: 'changepassword', component: ChangepasswordComponent },
   { path: 'recoverpassword', component: RecoverpasswordComponent },
+  { path: 'suscripcion', component: SubscriptionComponent },
+  { path: 'stripe', component: StripeComponent },
+  { path: 'success.html', component: SuccessComponent },
+  { path: 'failure.html', component: FailureComponent },
   { path: '**', component: LoginComponent }
 
 ];
