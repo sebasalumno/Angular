@@ -1,4 +1,6 @@
+
 import { DatePipe } from "@angular/common";
+import { CicloOffer } from './ciclooffer';
 
 export interface OfferC{
     EmpresaId:number;
@@ -8,7 +10,7 @@ export interface OfferC{
     fechaI:Date;
     fechaF:Date;
     horario:string;
-    ciclos:Array<number>
+    listaCiclos:Array<CicloOffer>
 
 
 

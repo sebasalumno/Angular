@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProvinciaService } from '../services/getallprovincia.service';
 import { Provincia } from '../models/provincia';
 import { CicloService } from '../services/ciclo.service';
+import { CicloOffer } from '../models/ciclooffer';
 
 @Component({
   selector: 'app-offers-dialog',
@@ -14,8 +15,9 @@ import { CicloService } from '../services/ciclo.service';
 })
 export class OffersDialogComponent implements OnInit {
   Ciclos:Array<Ciclo> =[];
-  ciclosSelected:Array<number> = [];
-  Oferta !: OfferC 
+  ciclosSelected:Array<CicloOffer> = [];
+  Oferta !: OfferC; 
+  ciclito!:CicloOffer;
 
 
   constructor(private cicloSS:CicloService) { 
@@ -33,7 +35,7 @@ export class OffersDialogComponent implements OnInit {
       horario:" ",
       fechaF : new Date(),
       fechaI : new Date(),
-      ciclos:this.ciclosSelected
+      listaCiclos:this.ciclosSelected
 
     }
   }
@@ -51,7 +53,10 @@ loadCiclos(){
 }
 
 change(Cic:Ciclo){
-this.ciclosSelected.push(Cic.id)
+this.ciclito={
+  idCiclo:Cic.id
+}
+this.ciclosSelected.push(this.ciclito)
 console.log(this.Oferta)
 console.log("aqui")
 }
