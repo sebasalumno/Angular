@@ -48,6 +48,7 @@ import { StripeComponent } from './stripe/stripe.component';
 import { SuccessComponent } from './success/success.component';
 import { FailureComponent } from './failure/failure.component';
 import { InscriptionsDialogComponent } from './inscriptions-dialog/inscriptions-dialog.component';
+import { InscriptionDialogFreeComponent } from './inscription-dialog-free/inscription-dialog-free.component';
 
 //para iniciar angular ng serve --proxy-config proxy.conf.json
 @NgModule({
@@ -77,6 +78,7 @@ import { InscriptionsDialogComponent } from './inscriptions-dialog/inscriptions-
     SuccessComponent,
     FailureComponent,
     InscriptionsDialogComponent,
+    InscriptionDialogFreeComponent,
 
   ],
   entryComponents:[OffersDialogComponent],

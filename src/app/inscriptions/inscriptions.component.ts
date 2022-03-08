@@ -10,6 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { InscriptionsDialogComponent } from '../inscriptions-dialog/inscriptions-dialog.component';
 import { MessageService } from '../services/mensajeapp.service';
 import { Message } from '../models/message';
+import { InscriptionDialogFreeComponent } from '../inscription-dialog-free/inscription-dialog-free.component';
 
 @Component({
   selector: 'app-inscriptions',
@@ -44,10 +45,13 @@ export class InscriptionsComponent implements OnInit {
 
   }
   Contact(id:number){
-    if(sessionStorage.getItem("rollId")?.toString()=="2"){
+    console.log("hola")
+    if(sessionStorage.getItem("rolId")?.toString()=="2"){
+      console.log("dentro")
       let contactoD = this.dialog.open(InscriptionsDialogComponent)
-      //El dialog tiene que devolver un string y probarlo 
+      
       contactoD.afterClosed().subscribe(result => {
+        if(result.toString() != ""){
         console.log(result)
         this.message={
           UsuarioId:id,
@@ -59,10 +63,15 @@ export class InscriptionsComponent implements OnInit {
           window.location.reload();
         })
 
-        
+        }
 
         window.location.reload();
-      })
+        })
+      
+    }else{
+      let free = this.dialog.open(InscriptionDialogFreeComponent)
+      
+
     }
   }
 

@@ -2,7 +2,7 @@
 
 
 <mat-form-field appearance="fill">
-    <mat-label>descripcion de la oferta</mat-label>
+    <mat-label>Mensaje para el alumno</mat-label>
     <input matInput [(ngModel)]="mensaje">
   </mat-form-field>
 
@@ -10,5 +10,5 @@
 <div mat-dialog-actions>
 
     <button mat-button [mat-dialog-close]="mensaje" cdkFocusInitial>Ok</button>
-    <button mat-button (Click) = "Cancelar()">Cancelar</button>
+    <button mat-button mat-dialog-close>Cancelar</button>
   </div>
